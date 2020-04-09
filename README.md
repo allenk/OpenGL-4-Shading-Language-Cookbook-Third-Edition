@@ -23,6 +23,7 @@ x86 version:
 vcpkg.exe install glfw3
 vcpkg.exe install glm
 ```
+<img src="http://i.imgur.com/cQe3Drp.png" alt="vcpkg-cmake-toolchain">
 
 Example code from the [OpenGL 4 Shading Language Cookbook, 3rd Edition][cookbook]
 =========================================================
