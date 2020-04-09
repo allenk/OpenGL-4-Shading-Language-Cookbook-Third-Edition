@@ -1,3 +1,29 @@
+Allen, Best solution for Windows + Visual Studio User
+-----------------------------------------------------
+1.  Install GLM and GLFW via [VCKPG][https://github.com/microsoft/vcpkg].
+```
+x64 version:
+vcpkg.exe install glfw3:x64-windows
+vcpkg.exe install glm:x64-windows
+
+x86 version:
+vcpkg.exe install glfw3
+vcpkg.exe install glm
+```
+2.  Add VCPKG Toolchain
+    -DCMAKE_TOOLCHAIN_FILE=C:/vcpkg/scripts/buildsystems/vcpkg.cmake
+    Replace `C:/vcpkg/scripts/buildsystems/vcpkg.cmake` with your VCPKG root.
+    After this, CMake could find GLM and GLFW3 automatically.
+```
+x64 version:
+vcpkg.exe install glfw3:x64-windows
+vcpkg.exe install glm:x64-windows
+
+x86 version:
+vcpkg.exe install glfw3
+vcpkg.exe install glm
+```
+
 Example code from the [OpenGL 4 Shading Language Cookbook, 3rd Edition][cookbook]
 =========================================================
 
