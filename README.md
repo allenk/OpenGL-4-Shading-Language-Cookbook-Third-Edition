@@ -1,6 +1,9 @@
 Allen, Best solution for Windows + Visual Studio User
 -----------------------------------------------------
-1.  Install GLM and GLFW via [VCKPG][https://github.com/microsoft/vcpkg].
+Fork from PacketPublishing and add a simple solution for Windows user to solve cmake find_package issue for Windows environement. Windows doesn't own a unified folder (/usr/local/lib) to search library. Microsoft provides vcpkg for package management to speed up the development process.
+
+1.  Install [vcpkg][https://github.com/microsoft/vcpkg]
+2.  Install GLM and GLFW via vcpkg.
 ```
 x64 version:
 vcpkg.exe install glfw3:x64-windows
